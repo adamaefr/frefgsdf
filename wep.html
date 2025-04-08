@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>موقع بيع المنتجات</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            background-image: url('https://cdn.discordapp.com/attachments/1355278507722412234/1357434669385125899/wp4421387.webp?ex=67f61fcd&is=67f4ce4d&hm=846fdf326b90d5a1a996845eb73daaa5d10f903ae5ac33dfdb8c4a5e203da52b&'); /* هنا يمكنك تغيير رابط الخلفية */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        header {
+            background-color: rgba(0, 0, 0, 0.7); /* خلفية مظللة */
+            color: #fff;
+            padding: 15px 0;
+            text-align: center;
+            position: relative;
+        }
+
+        .logo {
+            position: fixed; /* يجعله ثابتًا في مكانه عند التمرير */
+            top: 20px;
+            left: 20px;
+            width: 50px; /* حجم الشعار صغير */
+            height: auto; /* الحفاظ على نسبة العرض إلى الارتفاع */
+        }
+
+        .social-icons {
+            position: absolute;
+            right: 20px;
+            top: 15px;
+        }
+
+        .social-icons a {
+            margin: 0 10px;
+            color: #fff;
+            font-size: 20px;
+            text-decoration: none;
+        }
+
+        .social-icons img {
+            width: 30px; /* حجم الأيقونات */
+            height: auto;
+        }
+
+        .products {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin: 30px 20px;
+        }
+
+        .product {
+            background-color: #fff;
+            width: 280px;
+            margin: 10px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            padding: 20px;
+        }
+
+        .product img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        .product h3 {
+            margin-top: 10px;
+            font-size: 20px;
+            color: #333;
+        }
+
+        .product p {
+            font-size: 14px;
+            color: #666;
+        }
+
+        .product .price {
+            font-size: 18px;
+            color: #e67e22; /* لون مميز للسعر */
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #333;
+            color: #fff;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="social-icons">
+            <!-- أيقونة تيك توك -->
+            <a href="https://www.tiktok.com/@tiktokadam1?_t=ZS-8vMExQrEvBQ&_r=1" target="_blank">
+                <img src="https://cdn.discordapp.com/attachments/1355278507722412234/1359090498299498618/tiktok-logo-tiktok-logo-transparent-tiktok-icon-transparent-free-free-png.webp?ex=67f63729&is=67f4e5a9&hm=9b587447f99a68b611b942e7706b6015aef9dea2e1b02b73bd302b34b9a3efd6&" alt="تيك توك">
+            </a>
+            <!-- أيقونة يوتيوب -->
+            <a href="https://www.youtube.com/@3ntel3ntelmhala" target="_blank">
+                <img src="https://cdn.discordapp.com/attachments/1355278507722412234/1357733361669374114/png-clipart-youtube-logo-application-illustration-youtube-play-button-computer-icons-blog-angle-logo-thumbnail.png?ex=67f5e47a&is=67f492fa&hm=c66810baa624ec4d1a35aed1b7aa88f3f25da8edd8622627ad77ea15b56fafde&" alt="يوتيوب">
+            </a>
+            <!-- أيقونة ديسكورد -->
+            <a href="https://discord.gg/6HH4pBT37r" target="_blank">
+                <img src="https://cdn.discordapp.com/attachments/1355278507722412234/1357733180030849244/5ed01047ff16ea45ec92a448cd98f0a807eeca466da7c176a1b2b5f2ca8deb66_200.webp?ex=67f5e44f&is=67f492cf&hm=d16378560bb82d660156a3078760a8a36959bdb1156ca68f9f2b3b1a336bada2&" alt="ديسكورد">
+            </a>
+        </div>
+    </header>
+
+    <div class="products">
+        <!-- المنتجات -->
+        <div class="products">
+            <!-- المنتج الأول -->
+            <div class="product">
+                <img src="https://cdn.discordapp.com/attachments/1355278507722412234/1359085127245893773/Untitled494_20250406055047.png?ex=67f63228&is=67f4e0a8&hm=6fdb1bc27f27b49a629c84ab841773858ca1ae5b9fc7516a81d25d94890b8281&" alt="منتج 1">
+                <h3>راعي برونزي</h3>
+                <p>دروع آيرون مطوره
+    
+                    بو + ستاك أسهم
+                   
+                    رتبة مميزة في الدسكورد
+                   
+                    رتبة مميزة في اللعبة</p>
+                    <p class="price">$2.00</p>
+            </div>
+    
+            <!-- المنتج الثاني -->
+            <div class="product">
+                <img src="https://cdn.discordapp.com/attachments/1355278507722412234/1359085127245893773/Untitled494_20250406055047.png?ex=67f63228&is=67f4e0a8&hm=6fdb1bc27f27b49a629c84ab841773858ca1ae5b9fc7516a81d25d94890b8281&" alt="منتج 2">
+                <h3>راعي فضي</h3>
+                <p>دروع دايموند
+    
+                    كروس بو + ستاك أسهم
+                   
+                    رتبة مميزة في الدسكورد
+                   
+                    رتبة مميزة في اللعبة</p>
+                    <p class="price">$6.00</p>
+            </div>
+    
+    
+            <!-- المنتج الثالث -->
+            <div class="product">
+                <img src="https://cdn.discordapp.com/attachments/1355278507722412234/1359085127245893773/Untitled494_20250406055047.png?ex=67f63228&is=67f4e0a8&hm=6fdb1bc27f27b49a629c84ab841773858ca1ae5b9fc7516a81d25d94890b8281&" alt="منتج 3">
+                <h3>راعي ذهبي</h3>
+                <p>دروع دايموند مطورة 
+    
+                    كروس بو مطور + ستاك أسهم
+                   
+                    رتبة مميزة في الدسكورد
+                   
+                    رتبة مميزة في اللعبة
+                   </p>
+                   <p class="price">$10.00</p>
+            </div>
+    
+    
+            <!-- المنتج الرابع -->
+            <div class="product">
+                <img src="https://cdn.discordapp.com/attachments/1355278507722412234/1359085127245893773/Untitled494_20250406055047.png?ex=67f63228&is=67f4e0a8&hm=6fdb1bc27f27b49a629c84ab841773858ca1ae5b9fc7516a81d25d94890b8281&" alt="منتج 4">
+                <h3>راعي الماسي</h3>
+                <p> دروع نذر رايت 
+    
+                    كروس بو  + ستاك أسهم
+                   
+                    رتبة مميزة في الدسكورد
+                   
+                    رتبة مميزة في اللعبة
+                   
+                    5,000 بلوكة حماية</p>
+                    <p class="price">$15.00</p>
+            </div>
+    
+            <!-- المنتج الخامس -->
+            <div class="product">
+                <img src="https://cdn.discordapp.com/attachments/1355278507722412234/1359085127245893773/Untitled494_20250406055047.png?ex=67f63228&is=67f4e0a8&hm=6fdb1bc27f27b49a629c84ab841773858ca1ae5b9fc7516a81d25d94890b8281&" alt="منتج 5">
+                <h3>راعي الماسي</h3>
+                <p> دروع نذر رايت مطوره 
+    
+                    كروس بو مطور  + ستاك أسهم
+                   
+                    رتبة مميزة في الدسكورد (الاسم فوق الإدارة)
+                   
+                    رتبة مميزة في اللعبة
+                   
+                    10,000 بلوكة حماية</p>
+                    <p class="price">$20.00</p>
+            </div>
+    
+    
+            <!-- المنتج السادس -->
+            <div class="product">
+                <img src="https://cdn.discordapp.com/attachments/1355278507722412234/1359085127245893773/Untitled494_20250406055047.png?ex=67f63228&is=67f4e0a8&hm=6fdb1bc27f27b49a629c84ab841773858ca1ae5b9fc7516a81d25d94890b8281&" alt="منتج 6">
+                <h3>راعي AENZO</h3>
+                <p> دروع نذر رايت مطورة لفل ماكس
+    
+                    كروس بو مطور لفل ماكس + 3 استاكات اسهم
+                   
+                    رتبة مميزة في الدسكورد (الاسم فوق الإدارة)
+                   
+                    رتبة مميزة في اللعبة
+    
+                     مسموح الطياران لمده يوم كامل
+                   
+                    100,000 بلوكة حماية</p>
+                    <p class="price">$30.00</p>
+            </div>
+        </div>
+        <div class="product">
+            <img src="product7.jpg" alt="منتج 7">
+            <h3>منتج 7</h3>
+            <p>وصف المنتج 7 هنا</p>
+            <p class="price">$19.00</p>
+        </div>
+        <div class="product">
+            <img src="product8.jpg" alt="منتج 8">
+            <h3>منتج 8</h3>
+            <p>وصف المنتج 8 هنا</p>
+            <p class="price">$35.00</p>
+        </div>
+        <div class="product">
+            <img src="product9.jpg" alt="منتج 9">
+            <h3>منتج 9</h3>
+            <p>وصف المنتج 9 هنا</p>
+            <p class="price">$40.00</p>
+        </div>
+        <div class="product">
+            <img src="product10.jpg" alt="منتج 10">
+            <h3>منتج 10</h3>
+            <p>وصف المنتج 10 هنا</p>
+            <p class="price">$45.00</p>
+        </div>
+        <div class="product">
+            <img src="product11
